@@ -2198,4 +2198,22 @@ div.pagination span.disabled {
 .home-newsletter {
   /* background: #0d1452; */
   background: rgb(255, 255, 255);
+  padding-top: 3rem;
+  padding-left: auto;
+}
+.home-newsletter .container .row .share a{
+  height:4rem;
+  width:4rem;
+  line-height:4rem;
+  border-radius: .5rem;
+  font-size: 2rem;
+  color: #000;
+  margin-right: .2rem;
+  background: #eee;
+  text-align: center;
+}
+
+.home-newsletter .container .row .share a:hover{
+  background: #13a31e;
+  color: #fff;
 }
