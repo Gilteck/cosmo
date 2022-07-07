@@ -2199,30 +2199,3 @@ div.pagination span.disabled {
   /* background: #0d1452; */
   background: rgb(255, 255, 255);
 }
-
-.home-newsletter .single {
-  max-width: 650px;
-  margin: 0 auto;
-  text-align: center;
-  position: relative;
-  z-index: 2;
-}
-.home-newsletter .single h2 {
-  font-size: 22px;
-  color: white;
-  text-transform: uppercase;
-  margin-bottom: 40px;
-  margin-top: 0;
-}
-.home-newsletter .single .form-control {
-  height: 50px;
-  border-color: #333;
-  outline: none;
-}
-.home-newsletter .single .btn {
-  min-height: 50px;
-  background: #333;
-  color: #fff;
-  padding-left: 15px;
-  padding-right: 15px;
-}
