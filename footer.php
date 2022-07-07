@@ -23,7 +23,7 @@ foreach ($result as $row)
 <section class="home-newsletter">
 	<div class="container">
 		<div class="row gy-2 gx-3">
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-3 col-md-6">
 					<a href="index.php"><img src="assets/uploads/<?php echo $logo; ?>" alt="logo image"></a>
 					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam, saepe.</p>
             		<div class="share">
@@ -33,27 +33,27 @@ foreach ($result as $row)
                 		<a href="#" class="fa fa-linkedin"></a>
             		</div>
                 </div>
-                <div class="col-lg-2 col-md-6">
-                    <h5 class="text-white mb-3">Quick links</h5>
+                <div class="col-lg-4 col-md-6">
+                    <h3>contact info</h3>
                     <ul class="list-unstyled text-muted">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Get started</a></li>
-                        <li><a href="#">FAQ</a></li>
+            			<li><a href="#" class="links"> <i class="fa fa-phone"></i> +237-672-193-770 </a></li>
+            			<li><a href="#" class="links"> <i class="fa fa-phone"></i> +237-672-193-770</a></li>
+            			<li><a href="#" class="links"> <i class="fa fa-envelope"></i> cosmopenbookshop00@gmail.com </a></li>
+            			<li><a href="#" class="links"> <i class="fa fa-map"></i> Yde, Cameroon</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-2 col-md-6">
-                    <h5 class="text-white mb-3">Quick links</h5>
+                    <h3 class="text-white mb-3">Quick links</h3>
                     <ul class="list-unstyled text-muted">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Get started</a></li>
-                        <li><a href="#">FAQ</a></li>
-                        <li><a href="#">FAQ</a></li>
-                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#" class="links"><i class="fa fa-arrow-right"></i>Home</a></li>
+                        <li><a href="#" class="links"><i class="fa fa-arrow-right"></i>About</a></li>
+                        <li><a href="#" class="links"><i class="fa fa-arrow-right"></i>Get started</a></li>
+                        <li><a href="#" class="links"><i class="fa fa-arrow-right"></i>FAQ</a></li>
+                        <li><a href="#" class="links"><i class="fa fa-arrow-right"></i>FAQ</a></li>
+                        <li><a href="#" class="links"><i class="fa fa-arrow-right"></i>FAQ</a></li>
                     </ul>
                 </div>
-				<div class="col-lg-4 col-md-6">
+				<div class="col-lg-3 col-md-6">
 					<?php
 			if(isset($_POST['form_subscribe']))
 			{
@@ -133,12 +133,10 @@ This link will be active only for 24 hours.
 			?>
 				<form action="" method="post">
 					<?php $csrf->echoInputField(); ?>
-					<h2><?php echo LANG_VALUE_93; ?></h2>
+					<h3><?php echo LANG_VALUE_93; ?></h3>
 					<div class="input-group">
-			        	<input type="email" class="form-control" placeholder="<?php echo LANG_VALUE_95; ?>" name="email_subscribe"></ br>
-			         	<div class="input-group-btn">
-			         	<button class="btn btn-theme" type="submit" name="form_subscribe"><?php echo LANG_VALUE_92; ?></button>
-		</div>
+						<input type="email" placeholder="<?php echo LANG_VALUE_95; ?>" class="form-control" name="email_subscribe">
+                    	<input type="submit" value="<?php echo LANG_VALUE_92; ?>" class="btn btn-theme" name="form_subscribe">
 			        </div>
 				</div>
 				</form>

@@ -2217,3 +2217,61 @@ div.pagination span.disabled {
   background: #13a31e;
   color: #fff;
 }
+.home-newsletter .container .row #heading h3{
+  font-size: 2.5rem;
+  color:#0000;
+  padding:1rem 0;
+  font-weight: bolder;
+}
+
+.home-newsletter .container .row ul i{
+  color:#13a31e;
+}
+
+.home-newsletter .container .row .links{
+  display: block;
+  font-size: 1.5rem;
+  color:#666;
+  padding:1rem 0;
+}
+
+.home-newsletter .container .row .links i{
+  color:#13a31e;
+  padding-right: .5rem;
+}
+
+.home-newsletter .container .row .links:hover i{
+  padding-right: 2rem;
+  transition: all;
+}
+
+.home-newsletter .container .row .input-group .btn{
+  display: inline-block;
+  margin-top: 1rem;
+  padding:1rem 3rem;
+  cursor: pointer;
+  background-color:#13a31e;
+  font-size: 1.8rem;
+  border-radius: .5rem;
+  text-transform: capitalize;
+}
+.home-newsletter .container .row .input-group .btn:hover{
+  background-color: #666;
+}
+.home-newsletter .container .row .input-group .form-control{
+  width: 100%;
+  margin:.7rem 0;
+  padding:1rem;
+  border: none;
+  border-radius: 5rem;
+  background: #eee;
+  font-size: 1.6rem;
+  color:#13a31e;
+  text-transform: none;
+}
+.home-newsletter .container .row p{
+  line-height: 1.8;
+  font-size: 1.5rem;
+  color:#666;
+  padding:1rem 0;
+}
