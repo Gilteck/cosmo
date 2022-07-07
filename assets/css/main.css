@@ -2178,14 +2178,14 @@ div.pagination span.disabled {
   float: left;
   list-style-type: none;
   margin-right: 10px;
-  color: #0d1452;
+  color: #13a31e;
 }
 .breadcrumb ul li:last-child {
   color: #333;
 }
 
 .breadcrumb ul li a {
-  color: #0d1452;
+  color: #13a31e;
 }
 
 .bs-slider .item {
