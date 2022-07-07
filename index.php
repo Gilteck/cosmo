@@ -140,7 +140,7 @@ foreach ($result as $row)
                     $statement->execute(array(1,1));
                     $result = $statement->fetchAll(PDO::FETCH_ASSOC);                            
                     foreach ($result as $row) {
-                        ?>
+                       ?>
                         <div class="item">      
                             <div class="thumb"><a href="product.php?id=<?php echo $row['p_id']; ?>">
                                 <div class="photo" style="background-image:url(assets/uploads/<?php echo $row['p_featured_photo']; ?>);"></div>

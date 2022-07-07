@@ -21,8 +21,23 @@ foreach ($result as $row)
 <section class="home-newsletter">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-6 col-md-offset-3">
-				<div class="single">
+			<!--<div class="col-md-6 col-md-offset-4">-->
+		<div class="col-sm-4">
+            <div class="footer-col-item">
+              <h4>Go Travel Cloud</h4>
+              <address>
+              501,507 your company address<br>
+              400015 Maharashtra, UK
+              </address>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="footer-col-item">
+              <h4>Reach Us</h4>
+              <div class="item-contact"> <a href="tel:630-885-9200"><span class="link-id">P</span>:<span>630-885-9200</span></a> <a href="tel:630-839.2006"><span class="link-id">F</span>:<span>630-839.2006</span></a> <a href="mailto:info@brandcatmedia.com"><span class="link-id">E</span>:<span>info@brandcatmedia.com</span></a> </div>
+            </div>
+          </div>
+			<div class="col-sm-4">
 					<?php
 			if(isset($_POST['form_subscribe']))
 			{
@@ -77,6 +92,7 @@ Thanks for your interest to subscribe our newsletter!<br><br>
 Please click this link to confirm your subscription:
 					'.$verification_url.'<br><br>
 This link will be active only for 24 hours.
+
 					';
 
 							$headers = 'From: ' . $contact_email . "\r\n" .
@@ -109,8 +125,17 @@ This link will be active only for 24 hours.
 			         	<button class="btn btn-theme" type="submit" name="form_subscribe"><?php echo LANG_VALUE_92; ?></button>
 			         	</span>
 			        </div>
+					</form>
 				</div>
-				</form>
+				<div class="col-sm-4">
+            <div class="footer-col-item">
+              <h4>Sign up for Newsletter</h4>
+              <form class="signUpNewsletter" action="" method="get">
+                <input name="" class="gt-email form-control" placeholder="You@youremail.com" type="text">
+                <input name="" class="btn-go" value="Go" type="button">
+              </form>
+            </div>
+          </div>
 			</div>
 		</div>
 	</div>
