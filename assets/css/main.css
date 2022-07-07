@@ -688,6 +688,7 @@ Mobile style's
 
 .product .item .thumb .photo {
   width: 80%;
+  padding-top: 10%;
   height: 300px;
   margin-left: 10%;
   margin-right: 10%;

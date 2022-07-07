@@ -142,11 +142,6 @@ foreach ($result as $row)
                     foreach ($result as $row) {
                         ?>
                         <div class="item">      
-                            <div class="share">
-                                <a href="#" class="fas fa-eye"></a>
-                                <a href="#" class="fas fa-sync-alt"></a>
-                                <a href="#" class="fas fa-heart"></a>
-                            </div>
                             <div class="thumb"><a href="product.php?id=<?php echo $row['p_id']; ?>">
                                 <div class="photo" style="background-image:url(assets/uploads/<?php echo $row['p_featured_photo']; ?>);"></div>
                                 <div class="overlay"></div></a>
