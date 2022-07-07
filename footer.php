@@ -18,26 +18,35 @@ foreach ($result as $row)
 
 
 <?php if($newsletter_on_off == 1): ?>
+
+
 <section class="home-newsletter">
 	<div class="container">
-		<div class="row">
-			<!--<div class="col-md-6 col-md-offset-4">-->
-		<div class="col-sm-4">
-            <div class="footer-col-item">
-              <h4>Go Travel Cloud</h4>
-              <address>
-              501,507 your company address<br>
-              400015 Maharashtra, UK
-              </address>
-            </div>
-        </div>
-        <div class="col-sm-4">
-            <div class="footer-col-item">
-              <h4>Reach Us</h4>
-              <div class="item-contact"> <a href="tel:630-885-9200"><span class="link-id">P</span>:<span>630-885-9200</span></a> <a href="tel:630-839.2006"><span class="link-id">F</span>:<span>630-839.2006</span></a> <a href="mailto:info@brandcatmedia.com"><span class="link-id">E</span>:<span>info@brandcatmedia.com</span></a> </div>
-            </div>
-          </div>
-			<div class="col-sm-4">
+		<div class="row gy-4 gx-5">
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="h1 text-white">FB.</h5>
+                    <p class="small text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+                    <p class="small text-muted mb-0">&copy; Copyrights. All rights reserved. <a class="text-primary" href="#">Bootstrapious.com</a></p>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="text-white mb-3">Quick links</h5>
+                    <ul class="list-unstyled text-muted">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Get started</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="text-white mb-3">Quick links</h5>
+                    <ul class="list-unstyled text-muted">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Get started</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+				<div class="col-lg-4 col-md-6">
 					<?php
 			if(isset($_POST['form_subscribe']))
 			{
@@ -92,7 +101,6 @@ Thanks for your interest to subscribe our newsletter!<br><br>
 Please click this link to confirm your subscription:
 					'.$verification_url.'<br><br>
 This link will be active only for 24 hours.
-
 					';
 
 							$headers = 'From: ' . $contact_email . "\r\n" .
@@ -120,22 +128,13 @@ This link will be active only for 24 hours.
 					<?php $csrf->echoInputField(); ?>
 					<h2><?php echo LANG_VALUE_93; ?></h2>
 					<div class="input-group">
-			        	<input type="email" class="form-control" placeholder="<?php echo LANG_VALUE_95; ?>" name="email_subscribe">
-			         	<span class="input-group-btn"><br />
+			        	<input type="email" class="form-control" placeholder="<?php echo LANG_VALUE_95; ?>" name="email_subscribe"></ br>
+			         	<div class="input-group-btn">
 			         	<button class="btn btn-theme" type="submit" name="form_subscribe"><?php echo LANG_VALUE_92; ?></button>
-			         	</span>
+		</div>
 			        </div>
-					</form>
 				</div>
-				<div class="col-sm-4">
-            <div class="footer-col-item">
-              <h4>Sign up for Newsletter</h4>
-              <form class="signUpNewsletter" action="" method="get">
-                <input name="" class="gt-email form-control" placeholder="You@youremail.com" type="text">
-                <input name="" class="btn-go" value="Go" type="button">
-              </form>
-            </div>
-          </div>
+				</form>
 			</div>
 		</div>
 	</div>
