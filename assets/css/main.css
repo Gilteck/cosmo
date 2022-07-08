@@ -568,13 +568,12 @@ Mobile style's
 .product .product-carousel {
   position: relative;
   max-width: 1000px;
-  height: 500px;
   margin:0 auto;
   display: grid;
   padding: 1rem;
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   align-items: center;
-  gap:2.5rem;
+  gap:1.5rem;
   justify-content: center;
 }
 
@@ -698,14 +697,14 @@ Mobile style's
 }
 
 .product .item .thumb {
-  box-shadow: 0 2rem 2.5rem rgba(0, 7, 2, 0.1);
+/*  box-shadow: 0 2rem 2.5rem rgba(0, 7, 2, 0.1);*/
   overflow: hidden;
   position: relative;
 }
 
 .product .item .thumb .photo {
   height: 30rem;
-   margin: 10%;
+   margin-top: 10%;
    box-shadow: 0 2rem 2.5rem rgba(0, 7, 2, 0.1);
 
 }
