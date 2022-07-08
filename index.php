@@ -140,19 +140,19 @@ foreach ($result as $row)
                     $statement->execute(array(1,1));
                     $result = $statement->fetchAll(PDO::FETCH_ASSOC);                            
                     foreach ($result as $row) {
-                       ?>
-                        <div class="item">      
-                            <div class="thumb"><a href="product.php?id=<?php echo $row['p_id']; ?>">
+                        ?>
+                        <div class="item">
+                            <div class="thumb">
                                 <div class="photo" style="background-image:url(assets/uploads/<?php echo $row['p_featured_photo']; ?>);"></div>
-                                <div class="overlay"></div></a>
+                                <div class="overlay"></div>
                             </div>
                             <div class="text">
                                 <h3><a href="product.php?id=<?php echo $row['p_id']; ?>"><?php echo $row['p_name']; ?></a></h3>
                                 <h4>
-                                    FCFA<?php echo $row['p_current_price']; ?> 
+                                    $<?php echo $row['p_current_price']; ?> 
                                     <?php if($row['p_old_price'] != ''): ?>
                                     <del>
-                                        FCFA<?php echo $row['p_old_price']; ?>
+                                        $<?php echo $row['p_old_price']; ?>
                                     </del>
                                     <?php endif; ?>
                                 </h4>
@@ -271,17 +271,17 @@ foreach ($result as $row)
                     foreach ($result as $row) {
                         ?>
                         <div class="item">
-                            <div class="thumb"><a href="product.php?id=<?php echo $row['p_id']; ?>">
+                            <div class="thumb">
                                 <div class="photo" style="background-image:url(assets/uploads/<?php echo $row['p_featured_photo']; ?>);"></div>
-                                <div class="overlay"></div></a>
+                                <div class="overlay"></div>
                             </div>
                             <div class="text">
                                 <h3><a href="product.php?id=<?php echo $row['p_id']; ?>"><?php echo $row['p_name']; ?></a></h3>
                                 <h4>
-                                    FCFA<?php echo $row['p_current_price']; ?> 
+                                    $<?php echo $row['p_current_price']; ?> 
                                     <?php if($row['p_old_price'] != ''): ?>
                                     <del>
-                                        FCFA<?php echo $row['p_old_price']; ?>
+                                        $<?php echo $row['p_old_price']; ?>
                                     </del>
                                     <?php endif; ?>
                                 </h4>
@@ -402,17 +402,17 @@ foreach ($result as $row)
                     foreach ($result as $row) {
                         ?>
                         <div class="item">
-                            <div class="thumb"><a href="product.php?id=<?php echo $row['p_id']; ?>">
+                            <div class="thumb">
                                 <div class="photo" style="background-image:url(assets/uploads/<?php echo $row['p_featured_photo']; ?>);"></div>
-                                <div class="overlay"></div></a>
+                                <div class="overlay"></div>
                             </div>
                             <div class="text">
                                 <h3><a href="product.php?id=<?php echo $row['p_id']; ?>"><?php echo $row['p_name']; ?></a></h3>
                                 <h4>
-                                    FCFA<?php echo $row['p_current_price']; ?> 
+                                    $<?php echo $row['p_current_price']; ?> 
                                     <?php if($row['p_old_price'] != ''): ?>
                                     <del>
-                                        FCFA<?php echo $row['p_old_price']; ?>
+                                        $<?php echo $row['p_old_price']; ?>
                                     </del>
                                     <?php endif; ?>
                                 </h4>
