@@ -36,8 +36,8 @@ foreach ($result as $row)
                 <div class="col-lg-4 col-md-6">
                     <h3>contact info</h3>
                     <ul class="list-unstyled text-muted">
-            			<li><a href="#" class="links"> <i class="fa fa-phone"></i> +237-672-193-770 </a></li>
-            			<li><a href="#" class="links"> <i class="fa fa-phone"></i> +237-672-193-770</a></li>
+            			<li><a href="tel: +237 672 193 770" class="links"> <i class="fa fa-phone"></i> +237-672-193-770 </a></li>
+            			<li><a href="tel: +237 672 193 770" class="links"> <i class="fa fa-phone"></i> +237-672-193-770</a></li>
             			<li><a href="#" class="links"> <i class="fa fa-envelope"></i> cosmopenbookshop00@gmail.com </a></li>
             			<li><a href="#" class="links"> <i class="fa fa-map"></i> Yde, Cameroon</a></li>
                     </ul>

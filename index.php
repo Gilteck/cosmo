@@ -120,7 +120,7 @@ foreach ($result as $row)
 <?php endif; ?>
 
 <?php if($home_featured_product_on_off == 1): ?>
-<div class="product pt_70 pb_70">
+<div class="product pt_70 pb_70" style="background-color: white;">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
@@ -142,17 +142,23 @@ foreach ($result as $row)
                     foreach ($result as $row) {
                         ?>
                         <div class="item">
+                           
                             <div class="thumb">
                                 <div class="photo" style="background-image:url(assets/uploads/<?php echo $row['p_featured_photo']; ?>);"></div>
-                                <div class="overlay"></div>
+                                <div class="share">
+                                    <a href="#" class="fa fa-eye"></a>
+                                    <a href="#" class="fa fa-sync-alt"></a>
+                                    <a href="#" class="fa fa-heart"></a>
+                                </div>
                             </div>
+                            
                             <div class="text">
                                 <h3><a href="product.php?id=<?php echo $row['p_id']; ?>"><?php echo $row['p_name']; ?></a></h3>
                                 <h4>
-                                    $<?php echo $row['p_current_price']; ?> 
+                                    <?php echo $row['p_current_price']; ?>FCFA 
                                     <?php if($row['p_old_price'] != ''): ?>
                                     <del>
-                                        $<?php echo $row['p_old_price']; ?>
+                                        <?php echo $row['p_old_price']; ?>FCFA
                                     </del>
                                     <?php endif; ?>
                                 </h4>
@@ -273,15 +279,14 @@ foreach ($result as $row)
                         <div class="item">
                             <div class="thumb">
                                 <div class="photo" style="background-image:url(assets/uploads/<?php echo $row['p_featured_photo']; ?>);"></div>
-                                <div class="overlay"></div>
                             </div>
                             <div class="text">
                                 <h3><a href="product.php?id=<?php echo $row['p_id']; ?>"><?php echo $row['p_name']; ?></a></h3>
                                 <h4>
-                                    $<?php echo $row['p_current_price']; ?> 
+                                    <?php echo $row['p_current_price']; ?>FCFA 
                                     <?php if($row['p_old_price'] != ''): ?>
                                     <del>
-                                        $<?php echo $row['p_old_price']; ?>
+                                        <?php echo $row['p_old_price']; ?>FCFA
                                     </del>
                                     <?php endif; ?>
                                 </h4>
@@ -404,7 +409,6 @@ foreach ($result as $row)
                         <div class="item">
                             <div class="thumb">
                                 <div class="photo" style="background-image:url(assets/uploads/<?php echo $row['p_featured_photo']; ?>);"></div>
-                                <div class="overlay"></div>
                             </div>
                             <div class="text">
                                 <h3><a href="product.php?id=<?php echo $row['p_id']; ?>"><?php echo $row['p_name']; ?></a></h3>
