@@ -142,15 +142,14 @@ foreach ($result as $row)
                     foreach ($result as $row) {
                         ?>
                         <div class="item">
-                        
-                            <div class="thumb">
-                                <div class="photo" style="background-image:url(assets/uploads/<?php echo $row['p_featured_photo']; ?>);"></div>
+                                <img class="photo" src="assets/uploads/<?php echo $row['p_featured_photo']; ?>" alt="">
+
                                 <!--<div class="share">
                                     <a href="#" class="fa fa-eye"></a>
                                     <a href="#" class="fa fa-sync-alt"></a>
                                     <a href="#" class="fa fa-heart"></a>
                                 </div>-->
-                            </div>
+                            
                             
                             <div class="text">
                                 <h3><a href="product.php?id=<?php echo $row['p_id']; ?>"><?php echo $row['p_name']; ?></a></h3>
@@ -277,9 +276,9 @@ foreach ($result as $row)
                     foreach ($result as $row) {
                         ?>
                         <div class="item">
-                            <div class="thumb">
-                                <div class="photo" style="background-image:url(assets/uploads/<?php echo $row['p_featured_photo']; ?>);"></div>
-                            </div>
+                            
+                                <img class="photo" src="assets/uploads/<?php echo $row['p_featured_photo']; ?>" alt="">
+                            
                             <div class="text">
                                 <h3><a href="product.php?id=<?php echo $row['p_id']; ?>"><?php echo $row['p_name']; ?></a></h3>
                                 <h4>
@@ -396,7 +395,7 @@ foreach ($result as $row)
             </div>
         </div>
         <div class="row">
-            <div class="col-md-12">
+            <div class="col-lg">
 
                 <div class="product-carousel">
 
@@ -407,13 +406,13 @@ foreach ($result as $row)
                     foreach ($result as $row) {
                         ?>
                         <div class="item">
-                            <div class="thumb">
-                                <div class="photo" style="background-image:url(assets/uploads/<?php echo $row['p_featured_photo']; ?>);"></div>
-                            </div>
+                            
+                                <img class="photo" src="assets/uploads/<?php echo $row['p_featured_photo']; ?>" alt="">
+                            
                             <div class="text">
                                 <h3><a href="product.php?id=<?php echo $row['p_id']; ?>"><?php echo $row['p_name']; ?></a></h3>
                                 <h4>
-                                    <?php echo $row['p_current_price']; ?>  FCFA
+                                    <?php echo $row['p_current_price']; ?>FCFA
                                     <?php if($row['p_old_price'] != ''): ?>
                                     <del>
                                         <?php echo $row['p_old_price']; ?>FCFA
@@ -496,7 +495,7 @@ foreach ($result as $row)
                                         </div>
                                     </div>
                                 <?php else: ?>
-                                    <p><a href="product.php?id=<?php echo $row['p_id']; ?>"><i class="fa fa-shopping-cart"></i> Add to Cart</a></p>
+                                    <p class="btn"><a href="product.php?id=<?php echo $row['p_id']; ?>"><i class="fa fa-shopping-cart"></i> Add to Cart</a></p>
                                 <?php endif; ?>
                             </div>
                         </div>

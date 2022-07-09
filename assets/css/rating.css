@@ -15,7 +15,7 @@
 }
 
 .stars{
-    overflow: hidden;
+    overflow:auto;
 }
 
 .tmp_es{
