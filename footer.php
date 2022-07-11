@@ -20,7 +20,7 @@ foreach ($result as $row)
 <?php if($newsletter_on_off == 1): ?>
 
 
-<section class="home-newsletter">
+<section class="home-newsletter" style="box-shadow: .1rem 0 2.5rem 0;">
 	<div class="container">
 		<div class="row gy-2 gx-3">
                 <div class="col-lg-3 col-md-6">
@@ -108,6 +108,7 @@ Thanks for your interest to subscribe our newsletter!<br><br>
 Please click this link to confirm your subscription:
 					'.$verification_url.'<br><br>
 This link will be active only for 24 hours.
+
 					';
 
 							$headers = 'From: ' . $contact_email . "\r\n" .
@@ -143,13 +144,9 @@ This link will be active only for 24 hours.
 			</div>
 		</div>
 	</div>
-</section>
-<?php endif; ?>
+	<hr style="color:#000;">
 
-
-
-
-<div class="footer-bottom">
+<div class="footer-bottom" style="background-color:#fff; color:#000; font-size:2.5rem;">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12 copyright">
@@ -158,6 +155,11 @@ This link will be active only for 24 hours.
 		</div>
 	</div>
 </div>
+</section>
+<?php endif; ?>
+
+
+
 
 
 <a href="#" class="scrollup">

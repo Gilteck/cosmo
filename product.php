@@ -314,7 +314,7 @@ if($success_message1 != '') {
 						<div class="col-md-5">
 							<ul class="prod-slider">
                                 
-								<li style="background-image: url(assets/uploads/<?php echo $p_featured_photo; ?>);">
+								<li style="height:30rem;"><img class="photo" src="assets/uploads/<?php echo $p_featured_photo; ?>" alt="">
                                     <a class="popup" href="assets/uploads/<?php echo $p_featured_photo; ?>"></a>
 								</li>
                                 <?php
@@ -323,9 +323,9 @@ if($success_message1 != '') {
                                 $result = $statement->fetchAll(PDO::FETCH_ASSOC);
                                 foreach ($result as $row) {
                                     ?>
-                                    <li style="background-image: url(assets/uploads/product_photos/<?php echo $row['photo']; ?>);">
+								<li><img class="photo" src="assets/uploads/product_photos/<?php echo $row['photo']; ?>" alt="">
                                         <a class="popup" href="assets/uploads/product_photos/<?php echo $row['photo']; ?>"></a>
-                                    </li>
+                                </li>
                                     <?php
                                 }
                                 ?>
