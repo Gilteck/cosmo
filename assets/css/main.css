@@ -252,7 +252,7 @@ a:hover {
   text-align: center;
 }
 .menu-mobile {
-  display: none;
+  display:none;
   padding: 20px;
   color: rgb(8, 8, 8);
 }
@@ -569,7 +569,7 @@ Mobile style's
   max-width: 1000px;
   margin:0 auto;
   display: grid;
-  padding: 1rem;
+  padding: .1rem;
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   align-items: center;
   gap:1.5rem;
@@ -603,11 +603,10 @@ Mobile style's
 
 .product .item {
    background-color: #fff;
+  justify-items: center;
    padding:4rem 3rem;
    outline-offset: -1rem;
-   text-align: center;
    border:.1rem solid #000;
-   box-shadow: .5rem #000;
    overflow: hidden;
    border-radius: .5rem;
 }
@@ -617,7 +616,7 @@ Mobile style's
    background: no-repeat;
 }
 .product .text {
-  padding: 14px;
+  padding-bottom: 5px;
   overflow: hidden;
 }
 /*.product .text:hover {
@@ -628,27 +627,22 @@ Mobile style's
 .product .text del {
   color: #9d9d9d;
 }
-
-.product .text h3 {
-  padding:1rem 0;
-  font-size: 2.5rem;
-  font-weight: bold;
-  color:#000;
-}
-
-.product .text h3 a {
-  color: #333;
-  font-weight: lighter;
-  font-size: 2.5rem;
+.product .item h3 a .title{
+  margin-top: 10%;
+  background-color: #13a31e;
+  color: rgb(255, 255, 255);
+  font-weight: normal;
+  font-size: 1.7rem;
   line-height: 1.5;
+  padding:1rem 0;
 }
 
-.product .text h3 a:hover {
+
+.product .item h3 a:hover {
   text-decoration: none;
 }
 
 .product .text h4 {
-  position: center;
    align-items: center;
    border-radius: .5rem;
    padding:1rem;
@@ -663,17 +657,28 @@ Mobile style's
   margin-top: 20px;
   margin-bottom: 14px;
 }*/
-
-.product .text p a {
-  display: inline-block;
-  margin-top: 1rem;
-  padding:1rem 3rem;
-  cursor: pointer;
-  background-color:#13a31e;
-  color: white;
-  font-size: 1.8rem;
+.product .text .icon{
+  display: block;
+  align-items: center;
+  justify-items: space-between;
+}
+.product .text .icon a i{
+  height:4rem;
+  width:10rem;
+  line-height:4rem;
   border-radius: .5rem;
-  text-transform: capitalize;
+  font-size: 2rem;
+  color: #000;
+  margin-right: .2rem;
+  background: #eee;
+  text-align: center; 
+  align-items: center;
+  justify-items: space-between;
+}
+
+.product .text .icon a i:hover{
+  background: #13a31e;
+  color: #fff;
 }
 .product .out-of-stock {
   width: 100%;
@@ -682,8 +687,7 @@ Mobile style's
 
 .product .out-of-stock .inner {
   display: inline-block;
-  background: #13a31e;
-  color: #fff;
+  color: rgb(0, 0, 0);
   font-size: 14px;
   padding: 6px 10px;
   transition: all 0.4s ease;
@@ -707,6 +711,7 @@ Mobile style's
 .product .item  .photo {
   height: 30rem;
   margin-top: 10%;
+  max-width: fit-content;
   box-shadow: 0 2rem 2.5rem rgba(0, 7, 2, 0.1);
 
 }
@@ -1124,7 +1129,6 @@ Mobile style's
 }
 
 ul.prod-slider li {
-  height: 30rem;
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   background-size: cover;
@@ -1135,8 +1139,6 @@ ul.prod-slider li a {
   position: absolute;
   top: 0;
   left: 0;
-  width: auto;
-  height: 30rem;
   display: block;
   z-index: 99999999;
 }
@@ -1164,7 +1166,7 @@ ul.nav-tabs {
   margin-top: 50px;
 }
 .product .p-title h2 {
-  color: #13a31e;
+  color: #000000;
   margin-top: 0;
   font-size: 24px;
   font-weight: 700;
@@ -2219,12 +2221,11 @@ div.pagination span.disabled {
   background: rgb(255, 255, 255);
   padding-top: 3rem;
   padding-left: auto;
-  box-shadow: 2rem 2.5rem #000;
 }
-.home-newsletter .container{
-  box-shadow: 2rem 2.5rem rgb(36, 35, 35);
+.home-newsletter hr{
+  color: #000;
+}
 
-}
 .home-newsletter .container .row .share a{
   height:4rem;
   width:4rem;
@@ -2266,7 +2267,7 @@ div.pagination span.disabled {
 
 .home-newsletter .container .row .links:hover i{
   padding-right: 2rem;
-  transition: all 0.8s ease;
+  transition: all 0.4s ease;
 }
 
 .home-newsletter .container .row .input-group .btn{
