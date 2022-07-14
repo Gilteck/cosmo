@@ -296,6 +296,7 @@ if($success_message1 != '') {
 		<div class="row">
 			<div class="col-md-12">
                 <div class="breadcrumb mb_30">
+                    <hr>
                     <ul>
                         <li><a href="<?php echo BASE_URL; ?>">Home</a></li>
                         <li>></li>
@@ -314,7 +315,7 @@ if($success_message1 != '') {
 						<div class="col-md-5">
 							<ul class="prod-slider">
                                 
-								<li style="height:30rem;"><img class="photo" src="assets/uploads/<?php echo $p_featured_photo; ?>" alt="">
+								<li><img class="photo" src="assets/uploads/<?php echo $p_featured_photo; ?>" alt="">
                                     <a class="popup" href="assets/uploads/<?php echo $p_featured_photo; ?>"></a>
 								</li>
                                 <?php
@@ -356,47 +357,47 @@ if($success_message1 != '') {
                                     }
                                     elseif($avg_rating == 1.5) {
                                         echo '
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star-half-o"></i>
-                                            <i class="fas fa-star-o"></i>
-                                            <i class="fas fa-star-o"></i>
-                                            <i class="fas fa-star-o"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star-half-o"></i>
+                                            <i class="fa fa-star-o"></i>
+                                            <i class="fa fa-star-o"></i>
+                                            <i class="fa fa-star-o"></i>
                                         ';
                                     } 
                                     elseif($avg_rating == 2.5) {
                                         echo '
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star-half-o"></i>
-                                            <i class="fas fa-star-o"></i>
-                                            <i class="fas fa-star-o"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star-half-o"></i>
+                                            <i class="fa fa-star-o"></i>
+                                            <i class="fa fa-star-o"></i>
                                         ';
                                     }
                                     elseif($avg_rating == 3.5) {
                                         echo '
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star-half-o"></i>
-                                            <i class="fas fa-star-o"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star-half-o"></i>
+                                            <i class="fa fa-star-o"></i>
                                         ';
                                     }
                                     elseif($avg_rating == 4.5) {
                                         echo '
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star-half-o"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star-half-o"></i>
                                         ';
                                     }
                                     else {
                                         for($i=1;$i<=5;$i++) {
                                             ?>
                                             <?php if($i>$avg_rating): ?>
-                                                <i class="fas fa-star-o"></i>
+                                                <i class="fa fa-star-o"></i>
                                             <?php else: ?>
-                                                <i class="fas fa-star"></i>
+                                                <i class="fa fa-star"></i>
                                             <?php endif; ?>
                                             <?php
                                         }
@@ -490,7 +491,7 @@ if($success_message1 != '') {
 								<li role="presentation"><a href="#feature" aria-controls="feature" role="tab" data-toggle="tab"><?php echo LANG_VALUE_60; ?></a></li>
                                 <li role="presentation"><a href="#condition" aria-controls="condition" role="tab" data-toggle="tab"><?php echo LANG_VALUE_61; ?></a></li>
                                 <li role="presentation"><a href="#return_policy" aria-controls="return_policy" role="tab" data-toggle="tab"><?php echo LANG_VALUE_62; ?></a></li>
-                               <!-- <li role="presentation"><a href="#review" aria-controls="review" role="tab" data-toggle="tab"><?php echo LANG_VALUE_63; ?></a></li> -->
+                                <li role="presentation"><a href="#review" aria-controls="review" role="tab" data-toggle="tab"><?php echo LANG_VALUE_63; ?></a></li>
 							</ul>
 
 							<!-- Tab panes -->
@@ -577,9 +578,9 @@ if($success_message1 != '') {
                                                                 for($i=1;$i<=5;$i++) {
                                                                     ?>
                                                                     <?php if($i>$row['rating']): ?>
-                                                                        <i class="fas fa-star-o"></i>
+                                                                        <i class="fa fa-star-o"></i>
                                                                     <?php else: ?>
-                                                                        <i class="fas fa-star"></i>
+                                                                        <i class="fa fa-star"></i>
                                                                     <?php endif; ?>
                                                                     <?php
                                                                 }
@@ -623,7 +624,7 @@ if($success_message1 != '') {
                                                 <input type="radio" name="rating" class="rating" value="5" checked>
                                             </div>                                            
                                             <div class="form-group">
-                                                <textarea name="comment" class="form-control" cols="30" rows="10" placeholder="Write your comment (optional)" style="height:100px;"></textarea>
+                                                <textarea name="comment" class="form-control" cols="30" rows="10" placeholder="Leave a comment (optional)" style="height:100px;"></textarea>
                                             </div>
                                             <input type="submit" class="btn btn-default" name="form_review" value="<?php echo LANG_VALUE_67; ?>">
                                             </form>
@@ -673,13 +674,11 @@ if($success_message1 != '') {
                     $result = $statement->fetchAll(PDO::FETCH_ASSOC);
                     foreach ($result as $row) {
                         ?>
-                        <div class="item">
-                            <div class="thumb">
-                                <div class="photo" style="background-image:url(assets/uploads/<?php echo $row['p_featured_photo']; ?>);"></div>
-                                <div class="overlay"></div>
-                            </div>
+                                <div class="item">
+                                <img class="photo" src="assets/uploads/<?php echo $row['p_featured_photo']; ?>" alt="">
+                                <h3><a href="product.php?id=<?php echo $row['p_id']; ?>"><span class="title"><?php echo $row['p_name']; ?></span></a></h3>
+
                             <div class="text">
-                                <h3><a href="product.php?id=<?php echo $row['p_id']; ?>"><?php echo $row['p_name']; ?></a></h3>
                                 <h4>
                                     <?php echo LANG_VALUE_1; ?><?php echo $row['p_current_price']; ?> 
                                     <?php if($row['p_old_price'] != ''): ?>
@@ -710,54 +709,57 @@ if($success_message1 != '') {
                                     }
                                     elseif($avg_rating == 1.5) {
                                         echo '
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star-half-o"></i>
-                                            <i class="fas fa-star-o"></i>
-                                            <i class="fas fa-star-o"></i>
-                                            <i class="fas fa-star-o"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star-half-o"></i>
+                                            <i class="fa fa-star-o"></i>
+                                            <i class="fa fa-star-o"></i>
+                                            <i class="fa fa-star-o"></i>
                                         ';
                                     } 
                                     elseif($avg_rating == 2.5) {
                                         echo '
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star-half-o"></i>
-                                            <i class="fas fa-star-o"></i>
-                                            <i class="fas fa-star-o"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star-half-o"></i>
+                                            <i class="fa fa-star-o"></i>
+                                            <i class="fa fa-star-o"></i>
                                         ';
                                     }
                                     elseif($avg_rating == 3.5) {
                                         echo '
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star-half-o"></i>
-                                            <i class="fas fa-star-o"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star-half-o"></i>
+                                            <i class="fa fa-star-o"></i>
                                         ';
                                     }
                                     elseif($avg_rating == 4.5) {
                                         echo '
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star-half-o"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star-half-o"></i>
                                         ';
                                     }
                                     else {
                                         for($i=1;$i<=5;$i++) {
                                             ?>
                                             <?php if($i>$avg_rating): ?>
-                                                <i class="fas fa-star-o"></i>
+                                                <i class="fa fa-star-o"></i>
                                             <?php else: ?>
-                                                <i class="fas fa-star"></i>
+                                                <i class="fa fa-star"></i>
                                             <?php endif; ?>
                                             <?php
                                         }
                                     }
                                     ?>
                                 </div>
-                                <p><a href="product.php?id=<?php echo $row['p_id']; ?>"><?php echo LANG_VALUE_154; ?></a></p>
+                                <div class="icon">
+                                    <a href="product.php?id=<?php echo $row['p_id']; ?>"><i class="fa fa-eye"></i></a>
+                                    <a><i class="fa fa-shopping-cart"></i></a>
+                                    </div>
                             </div>
                         </div>
                         <?php

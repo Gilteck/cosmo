@@ -20,7 +20,8 @@ foreach ($result as $row)
 <?php if($newsletter_on_off == 1): ?>
 
 
-<section class="home-newsletter" style="box-shadow: .1rem 0 2.5rem 0;">
+<section class="home-newsletter" >
+<hr>
 	<div class="container">
 		<div class="row gy-2 gx-3">
                 <div class="col-lg-3 col-md-6">
@@ -142,9 +143,9 @@ This link will be active only for 24 hours.
 				</div>
 				</form>
 			</div>
+	<hr style="color:#000;">
 		</div>
 	</div>
-	<hr style="color:#000;">
 
 <div class="footer-bottom" style="background-color:#fff; color:#000; font-size:2.5rem;">
 	<div class="container">
