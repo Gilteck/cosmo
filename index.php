@@ -120,7 +120,7 @@ foreach ($result as $row)
 <?php endif; ?>
 
 <?php if($home_featured_product_on_off == 1): ?>
-<div class="product pt_70 pb_70" style="background-color: white;">
+<div class="product bg-gray pt_70 pb_70" >
     <div class="container">
         <div class="row">
             <div class="col-md-12">
@@ -134,7 +134,7 @@ foreach ($result as $row)
             <div class="col-md-12">
 
                 <div class="product-carousel">
-                    
+            
                     <?php
                     $statement = $pdo->prepare("SELECT * FROM tbl_product WHERE p_is_featured=? AND p_is_active=? LIMIT ".$total_featured_product_home);
                     $statement->execute(array(1,1));
@@ -142,9 +142,14 @@ foreach ($result as $row)
                     foreach ($result as $row) {
                         ?>
                         <div class="item">
+                            
                                 <img class="photo" src="assets/uploads/<?php echo $row['p_featured_photo']; ?>" alt="">
                                 <h3><a href="product.php?id=<?php echo $row['p_id']; ?>"><span class="title"><?php echo $row['p_name']; ?></span></a></h3>
-
+                                <div class="share">
+            <a href="#" class="fa fa-eye"></a>
+            <a href="#" class="fa fa-sync-alt"></a>
+            <a href="#" class="fa fa-heart"></a>
+         </div>
                             <div class="text">
                                 <h4>
                                     <?php echo $row['p_current_price']; ?>FCFA 
@@ -383,7 +388,7 @@ foreach ($result as $row)
 
 
 <?php if($home_popular_product_on_off == 1): ?>
-<div class="product pt_70 pb_70">
+<div class="product bg-gray pt_70 pb_70">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
@@ -514,6 +519,32 @@ foreach ($result as $row)
 <?php endif; ?>
 
 
+<section class="about bg-gray">
+
+   <div class="flex">
+
+      <div class="image">
+         <img src="assets/uploads/about-img.jpg" alt="">
+      </div>
+
+      <div class="content">
+         <h3>about us</h3>
+         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit quos enim minima ipsa dicta officia corporis ratione saepe sed adipisci?</p>
+         <a href="about.php" class="btn">read more</a>
+      </div>
+
+    </div>
+
+</section>
+<section class="home-contact">
+
+   <div class="content">
+      <h3>have any questions?</h3>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque cumque exercitationem repellendus, amet ullam voluptatibus?</p>
+      <a href="contact.php" class="white-btn">contact us</a>
+   </div>
+
+</section>
 
 
 <?php require_once('footer.php'); ?>

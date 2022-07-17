@@ -210,14 +210,14 @@ a:hover {
   list-style-type: none;
   float: left;
   margin-left: 14px;
-  color: #000;
+  color: #333;
 }
 .header .right ul li:hover{
   color: #13a31e;
 }
 
 .header .right ul li a {
-  color: #000;
+  color: #333;
 }
 .header .right ul li a:hover{
   color: #13a31e;
@@ -248,7 +248,7 @@ a:hover {
 }
 
 .menu-container .menu .menu-1{
-  color: #000;
+  color: #333;
   text-align: center;
 }
 .menu-mobile {
@@ -314,7 +314,7 @@ a:hover {
   /*background: #76767e;*/
   padding: 0;
   margin: 0;
-  color: #000;
+  color: #333;
 }
 
 .menu > ul > li a {
@@ -563,13 +563,15 @@ Mobile style's
   font-size: 38px;
   border-radius: 50%;
 }
+.product .product-carousel:first-child{
+  margin-bottom: 2rem;
+}
 
 .product .product-carousel {
-  position: relative;
   max-width: 1000px;
   margin:0 auto;
   display: grid;
-  padding: .1rem;
+  padding: 1rem;
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   align-items: center;
   gap:1.5rem;
@@ -602,13 +604,15 @@ Mobile style's
 }
 
 .product .item {
-   background-color: #fff;
-  justify-items: center;
-   padding:4rem 3rem;
-   outline-offset: -1rem;
-   border:.1rem solid #000;
-   overflow: hidden;
-   border-radius: .5rem;
+  position: relative;
+  background-color: #fff;
+  padding:3rem 2rem;
+  outline-offset: -1rem;
+  text-align: center;
+  border:.1rem solid #333;
+  box-shadow: 0 2rem 2.5rem rgba(0, 7, 2, 0.1);
+  overflow: hidden;
+  border-radius: .5rem;
 }
 .product .item:hover{
   outline-offset: 0rem;
@@ -646,7 +650,8 @@ Mobile style's
    align-items: center;
    border-radius: .5rem;
    padding:1rem;
-   font-size: 2.5rem;
+   display:inline-block;
+   font-size: 2rem;
    font-weight: bolder;
    color:var(--black);
 }
@@ -668,7 +673,7 @@ Mobile style's
   line-height:4rem;
   border-radius: .5rem;
   font-size: 2rem;
-  color: #000;
+  color: #333;
   margin-right: .2rem;
   background: #eee;
   text-align: center; 
@@ -696,6 +701,9 @@ Mobile style's
 
 .product .text .rating {
   text-align: center;
+  font-size: 1.7rem;
+  color:#13a31e;
+  padding:.5rem 0;
 }
 
 .product .text p a:hover {
@@ -710,37 +718,38 @@ Mobile style's
 
 .product .item  .photo {
   height: 30rem;
-  margin-top: 10%;
+  margin-top: 7%;
   max-width: fit-content;
   box-shadow: 0 2rem 2.5rem rgba(0, 7, 2, 0.1);
+  align-items: center;
 
 }
 
-.product .item  .share{
+.product .product-carousel .item  .share{
   position: absolute;
-  place-items: hidden;
+  top:0; left: -10rem ;
 }
 
-.product .item :hover .share{
-  top:.1px; left: .2rem;
+.product .product-carousel .item:hover .share{
+  left: 1rem;
 
 }
 
-.product .item  .share a{
+.product .product-carousel .item  .share a{
   height: 4.5rem;
   width: 4.5rem;
   line-height: 4.5rem;
   font-size: 2rem;
-  background-color: var(--white);
-  border:.1rem solid #000;
+  background-color: #fff;
+  border:.1rem solid #333;
   display: block;
   margin-top: 1rem;
-  color:#000;
+  color:#333;
 }
 
-.product .item  .share a:hover{
+.product .product-carousel .item  .share a:hover{
   background-color: #13a31e;
-  color:var(--white);
+  color:#fff;
   
 }
 /*
@@ -783,6 +792,14 @@ Mobile style's
 }
 .product .item-product-cat .inner {
   border: 2px solid #e5e5e5;
+  max-width: 1000px;
+  margin:0 auto;
+  display: grid;
+  padding: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  align-items: center;
+  gap:1.5rem;
+  justify-content: center;
 }
 
 .product .item-search-result {
@@ -1166,7 +1183,7 @@ ul.nav-tabs {
   margin-top: 50px;
 }
 .product .p-title h2 {
-  color: #000000;
+  color: #333;
   margin-top: 0;
   font-size: 24px;
   font-weight: 700;
@@ -1218,16 +1235,25 @@ ul.nav-tabs {
 }
 
 .product .btn-cart a {
-  padding: 10px 14px;
-  /* background: #13a31e; */
+  display: inline-block;
+   margin-top: 1rem;
+   padding:1rem 3rem;
+   cursor: pointer;
+   font-size: 1.8rem;
+   border-radius: .5rem;
+   text-transform: capitalize;
   background:#13a31e;
   color: #fff;
 }
 
 .product .btn-cart1 input[type="submit"] {
-  border: 0;
-  padding: 10px 14px;
-  /* background: #13a31e; */
+  display: inline-block;
+   margin-top: 1rem;
+   padding:1rem 3rem;
+   cursor: pointer;
+   font-size: 1.8rem;
+   border-radius: .5rem;
+   text-transform: capitalize;
   background: #13a31e;
   color: #fff;
 }
@@ -1462,7 +1488,7 @@ ul.nav-tabs {
   position: absolute;
   width: 25px;
   height: 25px;
-  background-color: #000;
+  background-color: #333;
   opacity: 1;
   color: #fff;
   z-index: 999;
@@ -2223,7 +2249,7 @@ div.pagination span.disabled {
   padding-left: auto;
 }
 .home-newsletter hr{
-  color: #000;
+  color: #333;
 }
 
 .home-newsletter .container .row .share a{
@@ -2232,7 +2258,7 @@ div.pagination span.disabled {
   line-height:4rem;
   border-radius: .5rem;
   font-size: 2rem;
-  color: #000;
+  color: #333;
   margin-right: .2rem;
   background: #eee;
   text-align: center;
@@ -2244,7 +2270,7 @@ div.pagination span.disabled {
 }
 .home-newsletter .container .row #heading h3{
   font-size: 2.5rem;
-  color:#0000;
+  color:#333;
   padding:1rem 0;
   font-weight: bolder;
 }
@@ -2301,3 +2327,90 @@ div.pagination span.disabled {
   color:#666;
   padding:1rem 0;
 }
+
+.about .flex{
+   max-width: 1200px;
+   margin:0 auto;
+   display: flex;
+   align-items: center;
+   flex-wrap: wrap;
+}
+
+.about .flex .image{
+   flex:1 1 40rem;
+}
+
+.about .flex .image img{
+   width: 100%;
+}
+
+.about .flex .content{
+   flex:1 1 40rem;
+   padding:2rem;
+   background-color: var(--light-bg);
+}
+
+.about .flex .content h3{
+   font-size: 3rem;
+   color:var(--black);
+   text-transform: uppercase;
+}
+
+.about .flex .content p{
+   padding:1rem 0;
+   line-height: 2;
+   font-size: 1.7rem;
+   color:var(--light-color);
+}
+.about .flex .content .btn{
+  display: inline-block;
+   background-color:#13a31e;
+   margin-top: 1rem;
+  padding:1rem 3rem;
+  cursor: pointer;
+  color:#fff;
+  font-size: 1.8rem;
+  border-radius: .5rem;
+  text-transform: capitalize;}
+  .about .flex .content .btn:hover{
+    background-color: #666;
+    transition: all;
+   }
+  
+.home-contact{
+  background-color: #333;
+}
+
+.home-contact .content{
+  max-width: 60rem;
+  text-align: center;
+  margin:0 auto;
+}
+
+.home-contact .content h3{
+  font-size: 3rem;
+  text-transform: uppercase;
+  color:#fff;
+}
+
+.home-contact .content p{
+  padding:1rem 0;
+  line-height: 1.5;
+  color:#fff;
+  font-size: 1.7rem;
+}
+.home-contact .content a{
+  display: inline-block;
+  background-color:#13a31e;
+  margin-top: 1rem;
+ padding:1rem 3rem;
+ cursor: pointer;
+ color:#fff;
+ font-size: 1.8rem;
+ border-radius: .5rem;
+ text-transform: capitalize;
+}
+ .home-contact .content a:hover{
+  background-color: #666;
+  transition: all;
+ }

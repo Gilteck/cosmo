@@ -167,11 +167,11 @@ if( !isset($_REQUEST['id']) || !isset($_REQUEST['type']) ) {
                                     <div class="col-md-4 item item-product-cat">
                                         <div class="inner">
                                             <div class="thumb">
-                                                <div class="photo" style="background-image:url(assets/uploads/<?php echo $row['p_featured_photo']; ?>);"></div>
-                                                <div class="overlay"></div>
+                                            <img class="photo" src="assets/uploads/<?php echo $row['p_featured_photo']; ?>" alt="">
+                                            <h3><a href="product.php?id=<?php echo $row['p_id']; ?>"><span class="title"><?php echo $row['p_name']; ?></span></a></h3>
+
                                             </div>
                                             <div class="text">
-                                                <h3><a href="product.php?id=<?php echo $row['p_id']; ?>"><?php echo $row['p_name']; ?></a></h3>
                                                 <h4>
                                                     <?php echo LANG_VALUE_1; ?><?php echo $row['p_current_price']; ?> 
                                                     <?php if($row['p_old_price'] != ''): ?>
@@ -256,8 +256,11 @@ if( !isset($_REQUEST['id']) || !isset($_REQUEST['type']) ) {
                                                         </div>
                                                     </div>
                                                 <?php else: ?>
-                                                    <p><a href="product.php?id=<?php echo $row['p_id']; ?>"><i class="fa fa-shopping-cart"></i> <?php echo LANG_VALUE_154; ?></a></p>
-                                                <?php endif; ?>
+                                                    <div class="icon">
+                                                        <a href="product.php?id=<?php echo $row['p_id']; ?>"><i class="fa fa-eye"></i></a>
+                                                        <a><i class="fa fa-shopping-cart"></i></a>
+                                                    </div>
+                                    <?php endif; ?>
                                             </div>
                                         </div>
                                     </div>
