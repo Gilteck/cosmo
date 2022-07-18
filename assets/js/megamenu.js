@@ -12,6 +12,8 @@ $(document).ready(function () {
 
     $(".menu > ul").before('<a href=\"#\" class=\"menu-mobile\"></a>');
 
+    $(".menu > ul").before('<a href=\"#\" class=\"menu-mobile\">Menu</a>');
+
     //Adds menu-mobile class (for mobile toggle menu) before the normal menu
     //Mobile menu is hidden if width is more then 959px, but normal menu is displayed
     //Normal menu is hidden if width is below 959px, and jquery adds mobile menu

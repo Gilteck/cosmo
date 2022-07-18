@@ -571,11 +571,16 @@ Mobile style's
 }
 
 .product .product-carousel {
+<<<<<<< HEAD
   max-width: 1000px;
+=======
+  position: relative;
+  max-width: 1200px;
+>>>>>>> 3307eccaebffada4d077dc6bd9b8b1449d7ad191
   margin:0 auto;
   display: grid;
-  padding: 1rem;
-  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  padding: .1rem;
+  grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
   align-items: center;
   gap:1.5rem;
   justify-content: center;
@@ -607,6 +612,7 @@ Mobile style's
 }
 
 .product .item {
+<<<<<<< HEAD
   position: relative;
   background-color: #fff;
   padding:3rem 2rem;
@@ -616,6 +622,15 @@ Mobile style's
   box-shadow: 0 2rem 2.5rem rgba(0, 7, 2, 0.1);
   overflow: hidden;
   border-radius: .5rem;
+=======
+   background-color: #fff;
+  justify-items: center;
+   padding:4rem 3rem;
+   outline-offset: -1rem;
+   border:.1rem solid #000;
+   overflow: hidden;
+   border-radius: .5rem;
+>>>>>>> 3307eccaebffada4d077dc6bd9b8b1449d7ad191
 }
 .product .item:hover{
   outline-offset: 0rem;
@@ -676,7 +691,11 @@ Mobile style's
   line-height:4rem;
   border-radius: .5rem;
   font-size: 2rem;
+<<<<<<< HEAD
   color: #333;
+=======
+  color: #000;
+>>>>>>> 3307eccaebffada4d077dc6bd9b8b1449d7ad191
   margin-right: .2rem;
   background: #eee;
   text-align: center; 
@@ -721,7 +740,11 @@ Mobile style's
 
 .product .item  .photo {
   height: 30rem;
+<<<<<<< HEAD
   margin-top: 7%;
+=======
+  margin-top: 10%;
+>>>>>>> 3307eccaebffada4d077dc6bd9b8b1449d7ad191
   max-width: fit-content;
   box-shadow: 0 2rem 2.5rem rgba(0, 7, 2, 0.1);
   align-items: center;  
@@ -1183,7 +1206,11 @@ ul.nav-tabs {
   margin-top: 50px;
 }
 .product .p-title h2 {
+<<<<<<< HEAD
   color: #333;
+=======
+  color: #000000;
+>>>>>>> 3307eccaebffada4d077dc6bd9b8b1449d7ad191
   margin-top: 0;
   font-size: 24px;
   font-weight: 700;
@@ -2248,11 +2275,17 @@ div.pagination span.disabled {
   padding-left: auto;
 }
 .home-newsletter hr{
+<<<<<<< HEAD
   color: #333;
 }
 hr{
   color: #333;
 }
+=======
+  color: #000;
+}
+
+>>>>>>> 3307eccaebffada4d077dc6bd9b8b1449d7ad191
 .home-newsletter .container .row .share a{
   height:4rem;
   width:4rem;
