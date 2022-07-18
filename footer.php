@@ -21,7 +21,7 @@ foreach ($result as $row)
 
 
 <section class="home-newsletter" >
-<hr>
+	<hr>
 	<div class="container">
 		<div class="row gy-2 gx-3">
                 <div class="col-lg-3 col-md-6">
@@ -39,8 +39,8 @@ foreach ($result as $row)
                     <ul class="list-unstyled text-muted">
             			<li><a href="tel: +237 672 193 770" class="links"> <i class="fa fa-phone"></i> +237-672-193-770 </a></li>
             			<li><a href="tel: +237 672 193 770" class="links"> <i class="fa fa-phone"></i> +237-672-193-770</a></li>
-            			<li><a href="#" class="links"> <i class="fa fa-envelope"></i> cosmopenbookshop00@gmail.com </a></li>
-            			<li><a href="#" class="links"> <i class="fa fa-map"></i> Yde, Cameroon</a></li>
+            			<li><a href="mailto:cosmopenbookshop00@gmail.com" class="links"> <i class="fa fa-envelope"></i> cosmopenbookshop00@gmail.com </a></li>
+            			<li><a href="https://www.google.com/maps?ll=3.862605,11.503709&z=15&t=h&hl=en&gl=CM&mapclient=embed&cid=6662602739444655715" class="links"> <i class="fa fa-map"></i> Yde, Cameroon</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-2 col-md-6">
@@ -105,10 +105,10 @@ foreach ($result as $row)
 							$verification_url = BASE_URL.'verify.php?email='.$to.'&key='.$key;
 
 							$message = '
-Thanks for your interest to subscribe our newsletter!<br><br>
-Please click this link to confirm your subscription:
+	Thanks for your interest to subscribe our newsletter!<br><br>
+	Please click this link to confirm your subscription:
 					'.$verification_url.'<br><br>
-This link will be active only for 24 hours.
+	This link will be active only for 24 hours.
 
 					';
 

@@ -100,6 +100,7 @@ foreach ($result as $row) {
 	<link rel="stylesheet" href="assets/css/tree-menu.css">
 	<link rel="stylesheet" href="assets/css/select2.min.css">
 	<link rel="stylesheet" href="assets/css/main.css">
+	<link rel="stylesheet" href="assets/css/translator.css">
 	<link rel="stylesheet" href="assets/css/responsive.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Open+Sans">
 	<!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
@@ -268,7 +269,8 @@ foreach ($result as $row) {
 						foreach ($result as $row) {
 							?>
 							<?php if($row['social_url'] != ''): ?>
-							<li><a href="<?php echo $row['social_url']; ?>"><i class="<?php echo $row['social_icon']; ?>"></i></a></li>
+							<li><a href="<?php echo $row['social_url']; ?>"><i class="<?php echo $row['social_icon']; ?>"></i></a>
+							<div id='google_translate_element'></div></li>
 							<?php endif; ?>
 							<?php
 						}

@@ -248,23 +248,26 @@ a:hover {
 }
 
 .menu-container .menu .menu-1{
+  text-decoration:none;
   color: #333;
   text-align: center;
 }
 .menu-mobile {
   display:none;
   padding: 20px;
-  color: rgb(8, 8, 8);
+  text-decoration:none;
+  color: #333;
 }
 
 .menu-mobile:hover {
-  color: #13a31e;
+ background-color: #13a31e;
+ color: white;
   text-decoration:none;
 
 }
 
 .menu-mobile:after {
-  content: "\f067";
+  content: "\F0c9";
   font-family: "FontAwesome";
   font-size: 2.5rem;
   padding: 0;
@@ -277,7 +280,7 @@ a:hover {
 }
 
 .menu-dropdown-icon:before {
-  content: "\f067";
+  content: "\F107";
   font-family: "FontAwesome";
   display: none;
   cursor: pointer;
@@ -326,8 +329,8 @@ a:hover {
 }
 
 .menu > ul > li a:hover {
-  background: #fff;
-  color: #13a31e;
+  color: #fff;
+  background-color: #13a31e;
 }
 
 .menu > ul > li > ul {
@@ -721,7 +724,7 @@ Mobile style's
   margin-top: 7%;
   max-width: fit-content;
   box-shadow: 0 2rem 2.5rem rgba(0, 7, 2, 0.1);
-  align-items: center;
+  align-items: center;  
 
 }
 
@@ -781,32 +784,29 @@ Mobile style's
 */
 .product-cat {
   padding-top: 14px;
+  justify-content: space-between;
 }
 
 .product-cat .item {
   margin-bottom: 30px;
+  gap: 1.5rem;
 }
 
 .product .item-product-cat {
-  border: 0;
+  align-items: center;
 }
 .product .item-product-cat .inner {
-  border: 2px solid #e5e5e5;
-  max-width: 1000px;
-  margin:0 auto;
-  display: grid;
-  padding: 1rem;
-  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   align-items: center;
-  gap:1.5rem;
-  justify-content: center;
+
 }
 
 .product .item-search-result {
-  border: 0;
+  gap: 1.5rem;
+  align-items: center;
+
 }
 .product .item-search-result .inner {
-  border: 2px solid #e5e5e5;
+align-items: center;
 }
 .product .item-search-result:nth-of-type(4n + 1) {
   clear: both;
@@ -2245,13 +2245,14 @@ div.pagination span.disabled {
 .home-newsletter {
   /* background: #13a31e; */
   background: rgb(255, 255, 255);
-  padding-top: 3rem;
   padding-left: auto;
 }
 .home-newsletter hr{
   color: #333;
 }
-
+hr{
+  color: #333;
+}
 .home-newsletter .container .row .share a{
   height:4rem;
   width:4rem;
@@ -2379,6 +2380,8 @@ div.pagination span.disabled {
   
 .home-contact{
   background-color: #333;
+  padding: 2%;
+  margin-top: 2%;
 }
 
 .home-contact .content{

@@ -142,14 +142,14 @@ foreach ($result as $row)
                     foreach ($result as $row) {
                         ?>
                         <div class="item">
-                            
+                            <a href="product.php?id=<?php echo $row['p_id']; ?>">
                                 <img class="photo" src="assets/uploads/<?php echo $row['p_featured_photo']; ?>" alt="">
                                 <h3><a href="product.php?id=<?php echo $row['p_id']; ?>"><span class="title"><?php echo $row['p_name']; ?></span></a></h3>
                                 <div class="share">
-            <a href="#" class="fa fa-eye"></a>
-            <a href="#" class="fa fa-sync-alt"></a>
-            <a href="#" class="fa fa-heart"></a>
-         </div>
+                                    <a href="#" class="fa fa-eye"></a>
+                                    <a href="#" class="fa fa-sync-alt"></a>
+                                    <a href="#" class="fa fa-heart"></a>
+                                </div>
                             <div class="text">
                                 <h4>
                                     <?php echo $row['p_current_price']; ?>FCFA 
@@ -242,6 +242,8 @@ foreach ($result as $row)
                                     </div>
                                 <?php endif; ?>
                             </div>
+                            </a>
+                        
                         </div>
                         <?php
                     }
@@ -534,17 +536,17 @@ foreach ($result as $row)
       </div>
 
     </div>
+    <section class="home-contact">
+
+<div class="content">
+   <h3>have any questions?</h3>
+   <p>If you have any questions, general review or difficulty, feel free to contact us via the link below</p>
+   <a href="contact.php" class="btn">contact us</a>
+</div>
 
 </section>
-<section class="home-contact">
-
-   <div class="content">
-      <h3>have any questions?</h3>
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque cumque exercitationem repellendus, amet ullam voluptatibus?</p>
-      <a href="contact.php" class="white-btn">contact us</a>
-   </div>
-
 </section>
+
 
 
 <?php require_once('footer.php'); ?>
