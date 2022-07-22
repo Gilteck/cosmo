@@ -145,15 +145,11 @@ foreach ($result as $row)
                             <a href="product.php?id=<?php echo $row['p_id']; ?>">
                                 <img class="photo" src="assets/uploads/<?php echo $row['p_featured_photo']; ?>" alt="">
                                 <h3><a href="product.php?id=<?php echo $row['p_id']; ?>"><span class="title"><?php echo $row['p_name']; ?></span></a></h3>
-<<<<<<< HEAD
                                 <div class="share">
                                     <a href="#" class="fa fa-eye"></a>
                                     <a href="#" class="fa fa-sync-alt"></a>
                                     <a href="#" class="fa fa-heart"></a>
                                 </div>
-=======
-
->>>>>>> 3307eccaebffada4d077dc6bd9b8b1449d7ad191
                             <div class="text">
                                 <h4>
                                     <?php echo $row['p_current_price']; ?>FCFA 

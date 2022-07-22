@@ -573,6 +573,7 @@ Mobile style's
 .product .product-carousel {
   max-width: 1000px;
   margin:0 auto;
+  text-align: center;
   display: grid;
   padding: 1rem;
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
@@ -612,6 +613,7 @@ Mobile style's
   padding:3rem 2rem;
   outline-offset: -1rem;
   text-align: center;
+  align-items: center;
   border:.1rem solid #333;
   box-shadow: 0 2rem 2.5rem rgba(0, 7, 2, 0.1);
   overflow: hidden;
@@ -721,10 +723,11 @@ Mobile style's
 
 .product .item  .photo {
   height: 30rem;
-  margin-top: 7%;
+  margin-top: 4%;
   max-width: fit-content;
   box-shadow: 0 2rem 2.5rem rgba(0, 7, 2, 0.1);
   align-items: center;  
+  text-align: center;
 
 }
 
@@ -2245,7 +2248,7 @@ div.pagination span.disabled {
 .home-newsletter {
   /* background: #13a31e; */
   background: rgb(255, 255, 255);
-  padding-left: auto;
+  padding-left: auto;align-items: center;
 }
 .home-newsletter hr{
   color: #333;

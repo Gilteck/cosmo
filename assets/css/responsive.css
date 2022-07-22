@@ -11,7 +11,6 @@
 @media only screen and (max-width: 991px) {
 	.header .inner {display: block;}
 	.header .logo {display: block;width: 100%;text-align: center;}
-	.header .logo img {}
 	.header .search-area {display: block;}
 	.header .right {display: block;}
 	.header .navbar-left {text-align: center;margin-bottom: 20px;}
@@ -22,6 +21,9 @@
 	.header form {
 		margin-left: 0;
 		margin-right: 0;
+	}
+	.home-newsletter {
+		align-items: center;
 	}
 }
 
@@ -35,7 +37,9 @@
 	.bx-controls a.bx-next {font-size: 36px;}
 	ul.bxslider li .text .inner h2 {font-size: 30px;}
 	ul.bxslider li .text .inner h3 {font-size: 20px;}
-	.bx-controls a.bx-prev, .bx-controls a.bx-next {padding-top: 120px!important;}
+	.bx-controls a.bx-prev, .bx-controls a.bx-next {padding-top: 120px!important;}	.home-newsletter {
+		align-items: center;
+	}
 }
 
 @media only screen and (min-width: 0px) and (max-width: 500px) {

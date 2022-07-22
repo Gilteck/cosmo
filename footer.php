@@ -21,11 +21,7 @@ foreach ($result as $row)
 
 
 <section class="home-newsletter" >
-<<<<<<< HEAD
 	<hr>
-=======
-<hr>
->>>>>>> 3307eccaebffada4d077dc6bd9b8b1449d7ad191
 	<div class="container">
 		<div class="row gy-2 gx-3">
                 <div class="col-lg-3 col-md-6">
