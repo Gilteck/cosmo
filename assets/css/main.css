@@ -253,9 +253,10 @@ a:hover {
   text-align: center;
 }
 .menu-mobile {
-  display:none;
-  padding: 20px;
-  text-decoration:none;
+  display: none;
+text-align: left;
+padding-right:5%;
+text-decoration:none;
   color: #333;
 }
 
@@ -263,16 +264,16 @@ a:hover {
  background-color: #13a31e;
  color: white;
   text-decoration:none;
-
 }
 
 .menu-mobile:after {
   content: "\F0c9";
   font-family: "FontAwesome";
-  font-size: 2.5rem;
+  font-size: 2rem;
   padding: 0;
-  float: right;
   position: relative;
+  text-decoration: none;
+  display: inline-block;
   top: 50%;
   -webkit-transform: translateY(-25%);
   -ms-transform: translateY(-25%);
@@ -429,7 +430,9 @@ Mobile style's
     width: 100%;
   }
   .menu-mobile {
-    display: block;
+    display: flex;
+    text-align: left;
+ 
   }
   .menu-dropdown-icon:before {
     display: block;
@@ -470,6 +473,9 @@ Mobile style's
     float: none;
   }
   .menu .show-on-mobile {
+    display: block;
+  }
+  #header{
     display: block;
   }
 }
@@ -573,7 +579,6 @@ Mobile style's
 .product .product-carousel {
   max-width: 1000px;
   margin:0 auto;
-  text-align: center;
   display: grid;
   padding: 1rem;
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
@@ -613,7 +618,6 @@ Mobile style's
   padding:3rem 2rem;
   outline-offset: -1rem;
   text-align: center;
-  align-items: center;
   border:.1rem solid #333;
   box-shadow: 0 2rem 2.5rem rgba(0, 7, 2, 0.1);
   overflow: hidden;
@@ -645,13 +649,25 @@ Mobile style's
   line-height: 1.5;
   padding:1rem 0;
 }
+.product .product-carousel .item .image {
+  max-height: 30rem;
+  margin-top: 4%;
+  max-width: fit-content;
+  box-shadow: 0 2rem 2.5rem rgba(0, 7, 2, 0.1);
 
-
-.product .item h3 a:hover {
-  text-decoration: none;
 }
 
-.product .text h4 {
+.product .text .name a{
+  text-decoration: none;
+  margin-top: 10%;
+  color: #333;
+  font-weight: bold;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  padding:1rem 0;
+}
+
+.product .text .price {
    align-items: center;
    border-radius: .5rem;
    padding:1rem;
@@ -721,16 +737,8 @@ Mobile style's
   position:inherit;
 }*/
 
-.product .item  .photo {
-  height: 30rem;
-  margin-top: 4%;
-  max-width: fit-content;
-  box-shadow: 0 2rem 2.5rem rgba(0, 7, 2, 0.1);
-  align-items: center;  
-  text-align: center;
 
-}
-
+/*
 .product .product-carousel .item  .share{
   position: absolute;
   top:0; left: -10rem ;
@@ -757,7 +765,7 @@ Mobile style's
   background-color: #13a31e;
   color:#fff;
   
-}
+}*/
 /*
 .product .item  .overlay {
   width: 100%;
@@ -2208,7 +2216,7 @@ div.pagination span.disabled {
   position: absolute;
   left: 50%;
   top: 50%;
-  background: url(../img/1.gif);
+  background: url(../img/Spinner-5.gif);
   background-repeat: no-repeat;
   background-position: center;
   margin: -100px 0 0 -100px;

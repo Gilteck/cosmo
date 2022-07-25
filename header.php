@@ -286,7 +286,7 @@ foreach ($result as $row) {
 <div class="header">
 	<div class="container">
 		<div class="row inner">
-			<div class="col-md-4 logo">
+			<div class="col-md-4 logo" id="header">
 				<a href="index.php"><img src="assets/uploads/<?php echo $logo; ?>" alt="logo image"></a>
 			</div>
 			
@@ -350,7 +350,7 @@ foreach ($result as $row) {
 		<div class="row">
 			<div class="col-md-12 pl_0 pr_0 bg-light text-dark text-center">
 				<div class="menu-container " >
-					<div class="menu">
+					<div class="menu" id="header">
 						<ul class="menu-1">
 							<li><a href="index.php">Home</a></li>
 							
