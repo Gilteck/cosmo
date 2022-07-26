@@ -622,6 +622,8 @@ Mobile style's
   box-shadow: 0 2rem 2.5rem rgba(0, 7, 2, 0.1);
   overflow: hidden;
   border-radius: .5rem;
+  place-items: center;
+
 }
 .product .item:hover{
   outline-offset: 0rem;
@@ -650,8 +652,10 @@ Mobile style's
   padding:1rem 0;
 }
 .product .product-carousel .item .image {
-  max-height: 30rem;
-  margin-top: 4%;
+  height: 30rem;
+  margin-top: .7rem;
+  margin: auto;
+  place-items: center;
   max-width: fit-content;
   box-shadow: 0 2rem 2.5rem rgba(0, 7, 2, 0.1);
 

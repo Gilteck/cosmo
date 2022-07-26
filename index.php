@@ -141,15 +141,11 @@ foreach ($result as $row)
                     $result = $statement->fetchAll(PDO::FETCH_ASSOC);                            
                     foreach ($result as $row) {
                         ?>
-                        <div class="item" style="align-item:center;">
+                        <div class="item">
                             <a href="product.php?id=<?php echo $row['p_id']; ?>">
-                            <div class="image">
-                                <img src="assets/uploads/<?php echo $row['p_featured_photo']; ?>" alt="">
-                            </div><br>
-                               <!-- <div class="share">
-                                    <a href="#" class="fa fa-eye"></a>
-                                    <a href="#" class="fa fa-heart"></a>
-                                </div>-->
+                            <div style="display: block;">
+                            <img class="image" src="assets/uploads/<?php echo $row['p_featured_photo']; ?>" alt="" place-items="center">
+                            </div><hr>
                             <div class="text">
                                 <div class="name">
                                     <a href="product.php?id=<?php echo $row['p_id']; ?>"><?php echo $row['p_name']; ?></a>
@@ -161,7 +157,7 @@ foreach ($result as $row)
                                         <?php echo $row['p_old_price']; ?>FCFA
                                     </del>
                                     <?php endif; ?>
-                                    </div>
+                                </div>
                                 <div class="rating">
                                     <?php
                                     $t_rating = 0;
@@ -240,9 +236,10 @@ foreach ($result as $row)
                                     </div>
                                 <?php else: ?>
                                     <div class="icon">
-                                    <a href="product.php?id=<?php echo $row['p_id']; ?>"><i class="fa fa-eye"></i></a>
-                                    <a><i class="fa fa-shopping-cart"></i></a>
+                                    <a href="product.php?id=<?php echo $row['p_id']; ?>"><i class="fa fa-eye"> View</i></a>
+                                    <a href=""><i class="fa fa-shopping-cart"> Buy</i></a>
                                     </div>
+
                                 <?php endif; ?>
                             </div>
                             </a>
@@ -282,19 +279,22 @@ foreach ($result as $row)
                     foreach ($result as $row) {
                         ?>
                         <div class="item">
-                            
-                                <img class="photo" src="assets/uploads/<?php echo $row['p_featured_photo']; ?>" alt="">
-                                <h3><a href="product.php?id=<?php echo $row['p_id']; ?>"><span class="title"><?php echo $row['p_name']; ?></span></a></h3>
-
+                        <a href="product.php?id=<?php echo $row['p_id']; ?>">
+                            <div style="display: block;">
+                            <img class="image" src="assets/uploads/<?php echo $row['p_featured_photo']; ?>" alt="" place-items="center">
+                            </div><hr>
                             <div class="text">
-                                <h4>
+                                <div class="name">
+                                    <a href="product.php?id=<?php echo $row['p_id']; ?>"><?php echo $row['p_name']; ?></a>
+                                </div>
+                                <div class="price">
                                     <?php echo $row['p_current_price']; ?>FCFA 
                                     <?php if($row['p_old_price'] != ''): ?>
                                     <del>
                                         <?php echo $row['p_old_price']; ?>FCFA
                                     </del>
                                     <?php endif; ?>
-                                </h4>
+                                </div>
                                 <div class="rating">
                                     <?php
                                     $t_rating = 0;
@@ -372,8 +372,8 @@ foreach ($result as $row)
                                     </div>
                                 <?php else: ?>
                                     <div class="icon">
-                                    <a href="product.php?id=<?php echo $row['p_id']; ?>"><i class="fa fa-eye">view</i></a>
-                                    <a><i class="fa fa-shopping-cart"></i></a>
+                                    <a href="product.php?id=<?php echo $row['p_id']; ?>"><i class="fa fa-eye"> View</i></a>
+                                    <a href=""><i class="fa fa-shopping-cart"> Buy</i></a>
                                     </div>
                                 <?php endif; ?>
                             </div>
@@ -415,19 +415,22 @@ foreach ($result as $row)
                     foreach ($result as $row) {
                         ?>
                         <div class="item">
-                            
-                                <img class="photo" src="assets/uploads/<?php echo $row['p_featured_photo']; ?>" alt="">
-                                <h3><a href="product.php?id=<?php echo $row['p_id']; ?>"><span class="title"><?php echo $row['p_name']; ?></span></a></h3>
-
+                        <a href="product.php?id=<?php echo $row['p_id']; ?>">
+                            <div style="display: block;">
+                            <img class="image" src="assets/uploads/<?php echo $row['p_featured_photo']; ?>" alt="" place-items="center">
+                            </div><hr>
                             <div class="text">
-                                <h4>
+                                <div class="name">
+                                    <a href="product.php?id=<?php echo $row['p_id']; ?>"><?php echo $row['p_name']; ?></a>
+                                </div>
+                                <div class="price">
                                     <?php echo $row['p_current_price']; ?>FCFA
                                     <?php if($row['p_old_price'] != ''): ?>
                                     <del>
                                         <?php echo $row['p_old_price']; ?>FCFA
                                     </del>
                                     <?php endif; ?>
-                                </h4>
+                                </div>
                                 <div class="rating">
                                     <?php
                                     $t_rating = 0;
@@ -505,8 +508,8 @@ foreach ($result as $row)
                                     </div>
                                 <?php else: ?>
                                     <div class="icon">
-                                    <a href="product.php?id=<?php echo $row['p_id']; ?>"><i class="fa fa-eye"></i></a>
-                                    <a><i class="fa fa-shopping-cart"></i></a>
+                                    <a href="product.php?id=<?php echo $row['p_id']; ?>"><i class="fa fa-eye"> View</i></a>
+                                    <a href=""><i class="fa fa-shopping-cart"> Buy</i></a>
                                     </div>
                                 <?php endif; ?>
                             </div>
